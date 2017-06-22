@@ -97,7 +97,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Bundles
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tomasr/molokai'
 "Plugin 'ervandew/supertab'
@@ -145,7 +145,7 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " disable folding
-set nofoldenable    
+"set nofoldenable    
 " vim-ariline + buffer settings
 " -----------------------------
 " Enable the list of buffers
