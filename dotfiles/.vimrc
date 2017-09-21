@@ -20,6 +20,9 @@ set cursorline
 " show the matching part of the pair for [] {} and ()
 set showmatch
 
+" hubrid relative numbers
+set number relativenumber
+
 " ---------------------------- "
 " Navigation and key remapping "
 " ---------------------------- "
@@ -98,13 +101,13 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Bundles
 "Plugin 'klen/python-mode'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'tomasr/molokai'
 "Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 "Bundle 'tpope/vim-fugitive'
-"Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 "Bundle 'scrooloose/nerdcommenter'
 "Bundle 'sjl/gundo.vim'
 "Bundle 'christoomey/vim-tmux-navigator'
@@ -122,6 +125,10 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 "let g:SuperTabDefaultCompletionType = "<Tab><c-x><c-u>"
 "call SuperTabSetDefaultCompletionType("<Tab><c-x><c-u>")
+"
+" ctrlp optioins
+" --------------
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.xlsx
 
 " Python options
 " --------------
@@ -203,7 +210,7 @@ let g:pymode_rope_completion = 0
 " Needed to activate vim-airline
 " https://github.com/bling/vim-airline/wiki/FAQ
 "set laststatus=2
-"let g:airline#extensions#tabline#enabled = 1        "Show buffers on top
+let g:airline#extensions#tabline#enabled = 1        "Show buffers on top
 
 " Settings for python-mode
 
