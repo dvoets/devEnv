@@ -84,9 +84,9 @@ endif
 syntax enable
 "syntax on
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 set t_Co=256
-"colorscheme molokai
+colorscheme molokai
 
 " Clear search highlights 
 " http://www.vimbits.com/bits/21
