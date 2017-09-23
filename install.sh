@@ -10,6 +10,8 @@ vim +PluginInstall +qall
 
 mkdir ~/.vim/colors
 ln -s ~/.vim/bundle/molokai/colors/molokai.vim ~/.vim/colors/molokai.vim
+ln -s ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
+git clone https://github.com/powerline/fonts.git
 
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 

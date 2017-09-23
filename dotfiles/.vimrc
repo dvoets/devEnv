@@ -81,10 +81,12 @@ endif
 " Syntax and search highlighting "
 " ------------------------------ "
 " Enable syntax highlighting
-syntax on
+syntax enable
+"syntax on
 set background=dark
-"colorscheme solarized
-colorscheme molokai
+colorscheme solarized
+set t_Co=256
+"colorscheme molokai
 
 " Clear search highlights 
 " http://www.vimbits.com/bits/21
@@ -103,8 +105,10 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'klen/python-mode'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
 "Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 "Bundle 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
@@ -157,9 +161,11 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " -----------------------------
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_solarized_bg='dark'
+let g:airline_powerline_fonts = 1
+set t_Co=256
 
 " Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
 " This allows buffers to be hidden if you've modified a buffer.
 " This is almost a must if you wish to use buffers in this way.
 set hidden
@@ -223,6 +229,7 @@ let g:airline#extensions#tabline#enabled = 1        "Show buffers on top
 "
 "au Filetype nerdtree setlocal nolist            "what does this do?
 "
-"let NERDTreeHighlightCursorline=1
-"let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeHighlightCursorline=1
+let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
