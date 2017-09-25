@@ -12,5 +12,11 @@ vim +PluginInstall +qall
 ln -s ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
 git clone https://github.com/powerline/fonts.git
 
+git clone https://github.com/powerline/fonts.git /tmp/fonts
+/tmp/fonts/./install.sh
+
+git config --global user.email "daan.voets@sas.com"
+git config --global user.name "Daan Voets"
+
 sudo yum install tmux -y
 
