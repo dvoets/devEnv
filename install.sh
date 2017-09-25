@@ -19,4 +19,5 @@ git config --global user.email "daan.voets@sas.com"
 git config --global user.name "Daan Voets"
 
 sudo yum install tmux -y
+sudo yum install setxkbmap -y
 
