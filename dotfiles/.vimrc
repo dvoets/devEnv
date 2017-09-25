@@ -104,7 +104,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Bundles
 "Plugin 'klen/python-mode'
 "Plugin 'davidhalter/jedi-vim'
-Plugin 'tomasr/molokai'
+"Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
 "Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
