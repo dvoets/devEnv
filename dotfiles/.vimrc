@@ -23,6 +23,10 @@ set showmatch
 " hubrid relative numbers
 set number relativenumber
 
+" search only cases sensitive if the string contains an uppercase
+set ignorecase
+set smartcase
+
 " ---------------------------- "
 " Navigation and key remapping "
 " ---------------------------- "
@@ -133,6 +137,8 @@ filetype plugin indent on    " required
 "
 " ctrlp optioins
 " --------------
+let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_dotfiles = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.xlsx
 
 " Python options
