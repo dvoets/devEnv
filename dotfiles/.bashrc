@@ -5,9 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-source .alias
+source ~/.alias
 
-PS1='[\u@\h \W]\$ '
+PS1='[\W]\$ '
 
 export VISUAL="vim"
 
