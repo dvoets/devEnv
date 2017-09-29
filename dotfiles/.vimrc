@@ -27,6 +27,9 @@ set number relativenumber
 set ignorecase
 set smartcase
 
+" toggle autoindent when paste from clipboard
+set pastetoggle=<F3>
+
 " ---------------------------- "
 " Navigation and key remapping "
 " ---------------------------- "
