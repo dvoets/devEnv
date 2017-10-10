@@ -109,29 +109,25 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Bundles
-"Plugin 'klen/python-mode'
-"Plugin 'davidhalter/jedi-vim'
-"Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
 "Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ervandew/supertab'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'Townk/vim-autoclose'
+Plugin 'vim-scripts/closetag.vim'
+Plugin 'adelarsq/vim-matchit'
+" Plugin 'vim-scripts/tComment'
 "Bundle 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 "Bundle 'scrooloose/nerdcommenter'
 "Bundle 'sjl/gundo.vim'
-"Bundle 'christoomey/vim-tmux-navigator'
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
-"Plugin 'garbas/vim-snipmate'
-"Plugin 'honza/vim-snippets'
-"Plugin 'aperezdc/vim-template'
-"Bundle 'vim-pandoc/vim-pandoc'
-"Bundle 'plasticboy/vim-markdown'
 "Bundle 'airblade/vim-gitgutter'
-"Bundle 'chrisbra/csv.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -167,9 +163,9 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Folding
 set foldmethod=indent   
-set foldnestmax=10
+set foldnestmax=2
 set nofoldenable
-set foldlevel=2
+set foldlevel=1
 
 " disable folding
 "set nofoldenable    
